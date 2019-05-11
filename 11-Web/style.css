@@ -1,0 +1,111 @@
+.navbar-brand {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  width: 140px;
+  padding: 10px;
+  background-color: rgb(34, 163, 163);
+  position: relative;
+  left: 50px;
+  z-index: 1;
+}
+
+h3{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  right: 0px;
+}
+
+.navbar-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  left: 800px 
+}
+
+.body{
+  background-color: gainsboro;
+}
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color:  rgb(34, 163, 163); 
+}
+
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color:  rgb(34, 163, 163); 
+}
+
+h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color:  rgb(34, 163, 163); 
+}
+
+.col-lg-8{
+  background-color: white;
+  top: 40px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  z-index: -1;
+}
+
+.col-lg-4{
+  background-color: white;
+  top: 40px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  z-index: -1;
+}
+
+.col-md-6{
+  background-color: white;
+  top: 40px;
+}
+
+.col-md-12{
+  background-color: white;
+  top: 40px;
+}
+
+.col-lg-12{
+  background-color: white;
+  top: 40px;
+}
+
+.table{
+  background-color: white;
+  position: relative;
+  top: 40px;
+}
+
+p{
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  position: relative;
+  top: 0px;
+  left: 20px;
+  right: 20px;
+  bottom: 50px;
+}
+
+@media (max-width: 990px) {
+
+  .body{
+    background-color: white;
+  } 
+
+  .collapse {
+    background-color:  rgb(34, 163, 163) !important;
+  }
+
+}
