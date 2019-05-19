@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+    <div class = row>
+        <div class = col-lg-12>
+            <h3>Latest Mars News</h3>
+            <h5>{{marslatest.Mars_News_Title}}</h5>
+            <p>{{marslatest.Mars_News_Text}}</p>
+        </div>
+    </div>
+    <div class = row>
+        <div class = col-lg-8>
+            <h4>Featured Mars Image</h4>
+            <img src="{{ marslatest.Featured_Image }}" alt="Featured_Image" width=90%>
+        </div>
+        <div class = col-lg-4>
+            <div class = row>
+                <h5>Current Weather on Mars</h5>
+                <p>{{marslatest.Mars_Weather}}</p>
+            </div>
+            <div class = row>
+                <h5>Mars Facts</h5>
+                <table border="1" class="dataframe">
+                    <p>{{marslatest.Mars_Facts | safe}}</p>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class = row>
+        <div class = col-lg-12>
+            <h3>Mars Hemispheres</h3>
+        </div>
+    </div>
+    <div class = row>
+        <div class = col-lg-6>
+            <img src="{{ marslatest.Mars_Hemis[0]['img_url']}}" alt="Valles" width=50%>
+            <p>{{ marslatest.Mars_Hemis[0]['title']}}</p>
+            <img src="{{ marslatest.Mars_Hemis[1]['img_url']}}" alt="Cerberus" width=50%>
+            <p>{{ marslatest.Mars_Hemis[1]['title']}}</p>
+        </div>
+        <div class = col-lg-6>
+            <img src="{{ marslatest.Mars_Hemis[2]['img_url']}}" alt="Schiaparelli" width=50%>
+            <p>{{ marslatest.Mars_Hemis[2]['title']}}</p>
+            <img src="{{ marslatest.Mars_Hemis[3]['img_url']}}" alt="Syrtus" width=50%>
+            <p>{{ marslatest.Mars_Hemis[3]['title']}}</p>
+        </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
